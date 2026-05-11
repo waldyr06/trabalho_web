@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Contato</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CABEÇALHO / NAVEGAÇÃO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Waldyr Araujo</a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Sobre mim</a>
+        <a href="formacao.html" class="nav-link">Formação</a>
+        <a href="portfolio.html" class="nav-link">Portfólio</a>
+        <a href="contato.html" class="nav-link active">Contato</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">☀</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Título da página -->
+      <section class="page-header fade-in">
+        <h1 class="page-title">Contato</h1>
+        <p class="page-subtitle">Vamos conversar? Preencha o formulário abaixo</p>
+      </section>
+
+      <section class="section fade-in contact-section">
+
+        <div class="contact-form-wrap">
+          <form id="contactForm" novalidate>
+
+            <!-- Campo Nome -->
+            <div class="form-group">
+              <label for="nome">Nome *</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome completo"
+                autocomplete="name"
+              />
+              <span class="error-msg" id="erroNome"></span>
+            </div>
+
+            <!-- Campo E-mail -->
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+                autocomplete="email"
+              />
+              <span class="error-msg" id="erroEmail"></span>
+            </div>
+
+            <!-- Campo Mensagem -->
+            <div class="form-group">
+              <label for="mensagem">Mensagem *</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                placeholder="Escreva sua mensagem aqui..."
+              ></textarea>
+              <span class="error-msg" id="erroMensagem"></span>
+            </div>
+
+            <button type="submit" class="btn-primary btn-full">Enviar mensagem</button>
+
+          </form>
+
+          <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+              <span class="modal-icon">✓</span>
+              <h3>Mensagem enviada com sucesso!</h3>
+              <p>Obrigado pelo contato. Retornarei em breve.</p>
+              <button class="btn-primary" id="modalClose">Fechar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <h3>Outras formas de contato</h3>
+          <ul class="contact-links">
+            <li>
+              <span class="contact-icon">📧</span>
+              <a href="waldyrfelype2012@gmail.com">waldyrfelype2012@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-icon">🐈‍⬛</span>
+              <a href="https://github.com/waldyr06" target="_blank" rel="noopener">https://github.com/waldyr06</a>
+            </li>
+            <li>
+              <span class="contact-icon">💼</span>
+              <a href="www.linkedin.com/in/waldyr-felype" target="_blank" rel="noopener">www.linkedin.com/in/waldyr-felype</a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Waldyr Araujo · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
